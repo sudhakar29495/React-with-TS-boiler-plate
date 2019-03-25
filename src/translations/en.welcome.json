@@ -1,0 +1,10 @@
+{
+  "greeting": "Hello ${name}!",
+  "title": "My Article title EN",
+  "login": "Login",
+  "logout": "Logout",
+
+  "navbar": {
+    "home":"Home"
+  }
+}

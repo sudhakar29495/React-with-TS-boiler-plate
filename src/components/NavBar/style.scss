@@ -1,0 +1,22 @@
+@import '../../_theme.scss';
+
+.navbar {
+  height: $app-nav-height;
+  background-color: $white;
+  position: fixed !important;
+  top: 0px;
+  width: 100%;
+  z-index: 50;
+  border-bottom: 1px solid $border-color;
+  .navbar-toggler i {
+    color: $primaryColor;
+  }
+  .user {
+    height: 40px;
+    width: 40px;
+    background-color: $boxBackground;
+    color: $primaryColor;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+}

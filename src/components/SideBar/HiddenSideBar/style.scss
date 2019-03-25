@@ -1,0 +1,40 @@
+@import '../../../theme';
+@import '../../../variables';
+@import '../../../mixins';
+
+.right-side-menu {
+  background-color: $background-shadow;
+  position: absolute;
+  top: -$app-nav-height;
+  bottom: 0;
+  right: 0;
+  z-index: 60;
+  width: 0px;
+  .close-icon {
+    display: none;
+  }
+  .right-side-content {
+    width: 500px;
+    height: 100%;
+    background-color: $white;
+    position: unset;
+    display: none;
+  }
+  &.expanded {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    .close-icon {
+      height: 20px;
+      width: 20px;
+      display: block;
+      right: 30px;
+      top: 30px;
+      position: relative;
+      cursor: pointer;
+    }
+    .right-side-content {
+      display: block;
+    }
+  }
+}

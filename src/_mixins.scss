@@ -1,0 +1,20 @@
+
+@mixin shadow-container {
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+  background-color: $white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@mixin sidemenu-transition($type) {
+  transition: $type $sidemenu-transition-delay;
+  -webkit-transition: $type $sidemenu-transition-delay;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

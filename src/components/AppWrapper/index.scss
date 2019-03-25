@@ -1,0 +1,33 @@
+@import '../../variables';
+@import '../../theme';
+@import '../../mixins';
+
+.container-section {
+  position: relative;
+  top: $app-nav-height;
+  .side-menu {
+    width: 0;
+    background-color: $white;
+    border-right: 1px solid $border-color;
+    min-height: calc(100vh - #{$app-nav-height});
+    position: absolute;
+    .list-group {
+      display: none;
+    }
+    &.expand {
+      width: $app-sideBar-width;
+      left: 0px;
+      position: unset;
+      .list-group {
+        display: block;
+      }
+    }
+  }
+  .main {
+    width: 100%;
+    padding: 30px;
+    &.expand {
+      width: calc(100% - #{$app-sideBar-width});
+    }
+  }
+}
